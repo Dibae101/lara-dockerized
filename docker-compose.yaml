@@ -9,7 +9,12 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d
 
   php:
-    
+    build:
+      context: ./dockerfiles
+      dockerfile: php.dockerfile
+    volumes:
+      - ./src:/var/www/html:delegated
+
   mysql:
   composer:
   npm:
