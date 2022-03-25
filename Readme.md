@@ -8,4 +8,8 @@ Targeting specific services in Docker-compose
 
 Rebuild images
 
-###`docker-compose up -d --build server`
+### `docker-compose up -d --build server`
+
+Artisan and Migrations
+
+### `docker-compose run --rm artisan migrate`
